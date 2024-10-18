@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="asserts/images/favicon-32x32.png">
+  <link rel="stylesheet" href="asserts/css/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="asserts/css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+      <img src="asserts/images/logo.svg" alt="">
+    </div>
+      <div class="row tip-app">
+          <div class="col-lg-6  first app">
+          <label for="" class="form-label labels">Bill</label>
+            <div class="form-input">
+              <input class="form-control text-input"  id="billInput" type="text" name="" value="" placeholder="0">
+              <span for="youridhere" class="static-value"><img src="asserts/images/icon-dollar.svg" alt=""> </span>
+          <div id="errorBill" class="error-message"> </div>
+        </div>
+          <div class="tips-btns row gap-3">
+            <label for="" class="labels">Select Tip %</label>
+  <button id="tip5" class="btn percent-btns col-lg-4 col-6" type="button" value="5">5%</button>
+  <button id="tip10" class="btn percent-btns  col-lg-4 col-6" type="button" value="10">10%</button>
+  <button id="tip15" class="btn percent-btns col-lg-4 col-6" type="button"value="15">15%</button>
+  <button id="tip25" class="btn percent-btns col-lg-4 col-6" type="button"value="25">25%</button>
+  <button id="tip50" class="btn  percent-btns col-lg-4 col-6" type="button"value="50">50%</button>
+  <input type="text" id="tipCustom" class="btn custom-btn form-control col-md-4 col-6" name="" value="" placeholder="Custom">
+  <div id="errorTip" class="error-message"> </div>
+</div>
+<label class="form-label labels">Number Of People</label>
+<div id="errorNumbPeople" class="error-message">  </div>
+<div class="form-input">
+  <input class="form-control text-input"  id="numbPeople" type="text" name="" value="" placeholder="0">
+  <span class="static-value"><img src="asserts/images/icon-person.svg" alt=""> </span>
+
+</div>
+        </div>
+      <div class="col-lg-6 second app">
+        <div class="card tip-calculater ">
+          <div class="d-flex justify-content-between">
+            <div>
+              <h5>Tip Amount</h5>
+              <p>/ person</p>
+            </div>
+            <h2 id="personTipAmnt">$0.00</h2>
+          </div>
+          <div class="d-flex justify-content-between mt-5">
+            <div>
+              <h5>Total</h5>
+              <p>/ person</p>
+            </div>
+            <h2 id="totalPersonAmnt">$0.00</h2>
+          </div>
+
+          <button id="resetBtn" class="btn btn-reset w-100 mt-auto">RESET</button>
+        </div>
+
+       </div>
+     </div>
+    </div>
+<script src="asserts/js/index.js" charset="utf-8"></script>
+  </body>
+</html>
